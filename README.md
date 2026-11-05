@@ -164,7 +164,7 @@ ip route 10.81.15.0 255.255.255.192 10.81.16.90
 
 Berikut gambar topologi GNS3 yang sudah kami beri label subnet A1 sampai A25. Penomoran subnet sama dengan yang dipakai pada VLSM, sehingga hasil kedua metode dapat dibandingkan.
 
-![alt text](../Jarkom-Modul-4-2026-K-35/images/cidr-topologi.png)
+![alt text](/images/cidr-topologi.png)
 
 Hanya router Cyberia yang terhubung ke NAT. Dari rancangan tersebut terdapat 25 subnet, terdiri dari 16 subnet LAN (router ke switch atau router ke node) dan 9 link antar-router. Link Cyberia ke NAT tidak dihitung karena alamatnya diberikan oleh NAT GNS3.
 
@@ -173,7 +173,7 @@ Hasil subnetting menggunakan metode CIDR adalah sebagai berikut.
 
 - Penggabungan
 
-![alt text](../Jarkom-Modul-4-2026-K-35/images/cidr-penggabungan.png)
+![alt text](/images/cidr-penggabungan.png)
 
 Aturan penggabungan: dua blok digabung menjadi satu blok seukuran 2 x blok yang terbesar, sehingga netmask akhir = netmask terkecil dikurangi 1. Blok yang lebih besar menempati alamat terendah, dan blok yang lebih kecil ditempatkan di awal separuh atas.
 
@@ -188,7 +188,7 @@ Penggabungan mengikuti cabang topologi (ujung ke arah Cyberia) dan menggabungkan
 
 - Pembagian IP
 
-![alt text](../Jarkom-Modul-4-2026-K-35/images/cidr-pembagian%20IP.png)
+![alt text](/images/cidr-pembagian%20IP.png)
 
 Pembagian dilakukan dari atas ke bawah, mulai dari blok akhir K1 = 10.81.0.0/19. Setiap blok dibagi menjadi dua separuh:
 
